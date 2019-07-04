@@ -19,13 +19,14 @@
             "Mydansun\\Math\\": "src/Math/"
         }
     },
+    "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [
                 "Mydansun\\Math\\Providers\\MathServiceProvider"
             ],
             "aliases": {
-                "Bar": "Mydansun\\Math\\Facades\\MathFacade"
+                "Math": "Mydansun\\Math\\Facades\\MathFacade"
             }
         }
     }
