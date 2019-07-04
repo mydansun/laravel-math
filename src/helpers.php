@@ -17,8 +17,11 @@ function count_decimal($number)
     return Math::getDecimalsLengthFromNumber($number);
 }
 
-function number_display($number, $decPoint = '.', $thousandSep = ',')
+function number_display($number, $decimals = null, $decPoint = '.', $thousandSep = ',')
 {
     $number = remove_end_zeros($number);
-    return number_format($number, count_decimal($number), $decPoint, $thousandSep);
+    if (is_null($decimals)) {
+        $decimals = count_decimal($number);
+    }
+    return number_format($number, $decimals, $decPoint, $thousandSep);
 }
