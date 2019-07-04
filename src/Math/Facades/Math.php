@@ -3,7 +3,7 @@
 namespace Mydansun\Math\Facades;
 
 
-class MathFacade extends \Illuminate\Support\Facades\Facade
+class Math extends \Illuminate\Support\Facades\Facade
 {
     /**
      * Get the registered name of the component.

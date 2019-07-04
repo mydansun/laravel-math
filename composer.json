@@ -23,10 +23,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Mydansun\\Math\\Providers\\MathServiceProvider"
+                "Mydansun\\Math\\Providers\\ServiceProvider"
             ],
             "aliases": {
-                "Math": "Mydansun\\Math\\Facades\\MathFacade"
+                "Math": "Mydansun\\Math\\Facades\\Math"
             }
         }
     }

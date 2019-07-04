@@ -4,7 +4,7 @@ namespace Mydansun\Math\Providers;
 
 use Mydansun\Math\Math;
 
-class MathServiceProvider extends \Illuminate\Support\ServiceProvider
+class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     protected $defer = true;
 
