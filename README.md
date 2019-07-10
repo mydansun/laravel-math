@@ -1,4 +1,10 @@
 # laravel-math
+
+[![Latest Stable Version](https://poser.pugx.org/mydansun/laravel-math/v/stable)](https://packagist.org/packages/mydansun/laravel-math)
+[![Total Downloads](https://poser.pugx.org/mydansun/laravel-math/downloads)](https://packagist.org/packages/mydansun/laravel-math)
+[![Latest Unstable Version](https://poser.pugx.org/mydansun/laravel-math/v/unstable)](https://packagist.org/packages/mydansun/laravel-math)
+[![License](https://poser.pugx.org/mydansun/laravel-math/license)](https://packagist.org/packages/mydansun/laravel-math)
+
 High precision calculation library for Laravel.
 
 This library is an extension of https://github.com/krowinski/bcmath-extended
