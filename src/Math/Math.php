@@ -106,10 +106,10 @@ class Math extends BC
         if (is_array($number1)) {
             return parent::min(...$number1);
         }
-        if (is_null($number2)) {
+        if (!is_null($number2)) {
             array_unshift($numbers, $number2);
         }
-        if (is_null($number1)) {
+        if (!is_null($number1)) {
             array_unshift($numbers, $number1);
         }
         return parent::min(...$numbers);
@@ -120,10 +120,10 @@ class Math extends BC
         if (is_array($number1)) {
             return parent::max(...$number1);
         }
-        if (is_null($number2)) {
+        if (!is_null($number2)) {
             array_unshift($numbers, $number2);
         }
-        if (is_null($number1)) {
+        if (!is_null($number1)) {
             array_unshift($numbers, $number1);
         }
         return parent::max(...$numbers);
