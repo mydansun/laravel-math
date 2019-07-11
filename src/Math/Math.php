@@ -100,4 +100,14 @@ class Math extends BC
         $number = static::convertScientificNotationToString($number);
         return parent::getDecimalsLengthFromNumber($number);
     }
+
+    public static function min(...$args)
+    {
+        return parent::min(...$args);
+    }
+    
+    public static function max(...$args)
+    {
+        return parent::max(...$args);
+    }
 }
