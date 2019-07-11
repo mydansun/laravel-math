@@ -101,13 +101,25 @@ class Math extends BC
         return parent::getDecimalsLengthFromNumber($number);
     }
 
-    public static function min(...$numbers)
+    public static function min($number1 = null, $number2 = null, ...$numbers)
     {
+        if (is_null($number2)) {
+            array_unshift($numbers, $number2);
+        }
+        if (is_null($number1)) {
+            array_unshift($numbers, $number1);
+        }
         return parent::min(...$numbers);
     }
-    
-    public static function max(...$numbers)
+
+    public static function max($number1 = null, $number2 = null, ...$numbers)
     {
+        if (is_null($number2)) {
+            array_unshift($numbers, $number2);
+        }
+        if (is_null($number1)) {
+            array_unshift($numbers, $number1);
+        }
         return parent::max(...$numbers);
     }
 }
