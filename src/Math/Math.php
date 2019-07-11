@@ -103,6 +103,9 @@ class Math extends BC
 
     public static function min($number1 = null, $number2 = null, ...$numbers)
     {
+        if (is_array($number1)) {
+            return parent::min(...$number1);
+        }
         if (is_null($number2)) {
             array_unshift($numbers, $number2);
         }
@@ -114,6 +117,9 @@ class Math extends BC
 
     public static function max($number1 = null, $number2 = null, ...$numbers)
     {
+        if (is_array($number1)) {
+            return parent::max(...$number1);
+        }
         if (is_null($number2)) {
             array_unshift($numbers, $number2);
         }
